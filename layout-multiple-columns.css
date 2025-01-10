@@ -1381,7 +1381,7 @@ body.embed .detailed-status,
 
 .layout-multiple-columns .hashtag-bar a:focus,
 .layout-multiple-columns .hashtag-bar a:hover {
-  background-color: var(--color-accent-dark);
+  background-color: var(--color-dim);
   /* It should be always light also on light mode, so not using variable here */
   color: #f7f9f9;
 }
