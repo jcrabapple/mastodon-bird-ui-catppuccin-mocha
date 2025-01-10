@@ -4907,3 +4907,55 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-multiple-columns .column-settings__hashtags .column-select__multi-value {
   background-color: var(--color-bg-75);
 }
+
+/* Modifications */
+.layout-multiple-columns .button {
+    color: var(--color-button-text) !important;
+}
+.layout-multiple-columns .column-link--transparent .icon-with-badge__badge {
+    color: var(--color-button-text) !important;
+}
+.layout-multiple-columns .layout-multiple-columns .trends__item__name a, 
+.layout-multiple-columns .link-footer p, 
+.layout-multiple-columns .status__prepend,
+.layout-multiple-columns .status__display-name,
+.layout-multiple-columns .status__display-name.muted,
+.layout-multiple-columns .status__display-name a, 
+.layout-multiple-columns .status__display-name.muted a,
+.layout-multiple-columns .status__prepend .status__display-name strong,
+.layout-multiple-columns .detailed-status__link,
+.layout-multiple-columns .detailed-status__link a, 
+.layout-multiple-columns .detailed-status__meta .animated-number,
+.layout-multiple-columns .detailed-status__meta .animated-number span, 
+.layout-multiple-columns .trends__item__name a {
+    color: var(--peach) !important;
+}
+.layout-multiple-columns .link-footer p a {
+    color: var(--color-link) !important;
+}
+.layout-multiple-columns .status .icon-reply {
+    padding-right: 11px !important;
+    padding-left: 10px !important;
+}
+@media screen and (min-width: 890px) {
+    .layout-multiple-columns .list-panel {
+        display: none !important;
+    }
+}
+.layout-multiple-columns .account__header__tabs__buttons .icon-button, button.optional.copyable.icon-button {
+    background-color: var(--color-link) !important;
+    fill: var(--color-dark) !important;
+    color: var(--color-dark) !important;
+    stroke: var(--color-dark) !important;
+}
+.layout-multiple-columns .navigation-bar button.icon-button.active .icon-close {
+    background-image: var(--icon-close-action-bar) !important;
+}
+.layout-multiple-columns .account__header__tabs__buttons .button,
+.layout-multiple-columns .column-inline-form button {
+    background-color: var(--color-link) !important;
+}
+.layout-multiple-columns .detailed-status__meta svg, 
+.layout-multiple-columns .status .status__visibility-icon svg {
+    color: var(--color-red) !important;
+}
