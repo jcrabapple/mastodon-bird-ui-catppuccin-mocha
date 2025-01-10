@@ -4,6 +4,8 @@ This is a Catppuccin Mocha variant of Roni Laukkarinen's [Mastodon BirdUI](https
 
 ## Installation for Mastodon instance admins
 
+This is assuming you don't already have BirdUI installed. If you do, you will need to make some modifications to your config/themes.yml.
+
 1. Copy the contents of layout-single-column.css and layout-multiple-columns.css and paste them (or one of them) to the **Custom CSS** in the Appearance settings in your instance (https://_yourinstance_/admin/settings/appearance). It might be recommended using the single layout CSS as "base" and use the advanced view CSS with browser extension (as it's desktop only anyway).
 
 ![Screen-Shot-2023-03-31-13-25-52](https://user-images.githubusercontent.com/1534150/229111630-c8975708-134b-4887-b259-a87857193387.png)
@@ -34,23 +36,23 @@ wget -N --no-check-certificate --no-cache --no-cookies --no-http-keep-alive http
 wget -N --no-check-certificate --no-cache --no-cookies --no-http-keep-alive https://raw.githubusercontent.com/jcrabapple/mastodon-bird-ui-catppuccin-mocha/$MASTODON_VERSION_FOR_BIRD_UI/layout-multiple-columns.css -O app/javascript/styles/mastodon-bird-ui-catppuccin-mocha/layout-multiple-columns.scss
 
 # Create dark theme file
-echo -e "@import 'application';\n@import 'mastodon-bird-ui-catppuccin-mocha/layout-single-column.scss';\n@import 'mastodon-bird-ui-catppuccin-mocha/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-catppuccin-mocha-dark.scss
+echo -e "@import 'application';\n@import 'mastodon-bird-ui-catppuccin-mocha/layout-single-column.scss';\n@import 'mastodon-bird-ui-catppuccin-mocha/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-catppuccin-mocha.scss
 
 # Overwrite config/themes.yml with new settings, Mastodon Bird UI dark as default
-echo -e "default: styles/mastodon-bird-ui-catppuccin-mocha-dark.scss\nmastodon-dark: styles/application.scss\nmastodon-light: styles/mastodon-light.scss\ncontrast: styles/contrast.scss" > config/themes.yml
+echo -e "default: styles/mastodon-bird-ui-catppuccin-mocha.scss\nmastodon-dark: styles/application.scss\nmastodon-light: styles/mastodon-light.scss\ncontrast: styles/contrast.scss" > config/themes.yml
 ```
 
 After this you need to edit localisations in `config/locales/en.yml` (`nano config/locales/en.yml`) and add this line:
 
 ```yml
-     mastodon-bird-ui-catppuccin-mocha-dark: Mastodon Bird UI Catppuccin Mocha
+  mastodon-bird-ui-catppuccin-mocha: Mastodon Bird UI Catppuccin Mocha
 ```
 
 Same for the localizations of your choice, for example `config/locales/fi.yml` (`nano config/locales/fi.yml`):
 
 
 ```yml
-  mastodon-bird-ui-catppuccin-mocha-dark: Mastodon Bird UI Catppuccin Mocha (Tumma)
+  mastodon-bird-ui-catppuccin-mocha: Mastodon Bird UI Catppuccin Mocha (Tumma)
 ```
 
 Make sure everything is set in place, then rebuild all the assets and restart all the services:
