@@ -399,40 +399,6 @@ body.theme-mastodon-light.layout-single-column {
   }
 }
 
-/* Modifications */
-.button {
-    color: var(--color-button-text) !important;
-}
-.column-link--transparent .icon-with-badge__badge {
-    color: var(--color-button-text) !important;
-}
-.layout-single-column .trends__item__name a, .layout-single-column .link-footer p {
-    color: var(--peach) !important;
-}
-.layout-single-column .link-footer p a {
-    color: var(--color-link) !important;
-}
-.layout-single-column .status .icon-reply {
-    padding-right: 11px !important;
-    padding-left: 10px !important;
-}
-@media screen and (min-width: 890px) {
-  .layout-single-column .list-panel {
-    display: none !important;
-  }
-}
-.account__header__tabs__buttons .icon-button, button.optional.copyable.icon-button {
-  background-color: var(--color-link) !important;
-  fill: var(--color-dark) !important;
-  color: var(--color-dark) !important;
-  stroke: var(--color-dark) !important;
-}
-.layout-single-column .navigation-bar button.icon-button.active .icon-close {
-  background-image: var(--icon-close-action-bar);
-}
-
-
-
 /* Search popout offset */
 .layout-single-column .search__popout,
 .layout-single-column .search-popout {
@@ -5502,4 +5468,58 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
   85% {
     transform: scale(1, 1);
   }
+}
+
+2/2: If you prefer stars remove this line too */
+
+/* Modifications */
+.layout-single-column .button {
+    color: var(--color-button-text) !important;
+}
+.layout-single-column .column-link--transparent .icon-with-badge__badge {
+    color: var(--color-button-text) !important;
+}
+.layout-single-column .layout-single-column .trends__item__name a, 
+.layout-single-column .link-footer p, 
+.layout-single-column .status__prepend,
+.layout-single-column .status__display-name,
+.layout-single-column .status__display-name.muted,
+.layout-single-column .status__display-name a, 
+.layout-single-column .status__display-name.muted a,
+.layout-single-column .status__prepend .status__display-name strong,
+.layout-single-column .detailed-status__link,
+.layout-single-column .detailed-status__link a, 
+.layout-single-column .detailed-status__meta .animated-number,
+.layout-single-column .detailed-status__meta .animated-number span, 
+.layout-single-column .trends__item__name a {
+    color: var(--peach) !important;
+}
+.layout-single-column .link-footer p a {
+    color: var(--color-link) !important;
+}
+.layout-single-column .status .icon-reply {
+    padding-right: 11px !important;
+    padding-left: 10px !important;
+}
+@media screen and (min-width: 890px) {
+  .layout-single-column .list-panel {
+    display: none !important;
+  }
+}
+.layout-single-column .account__header__tabs__buttons .icon-button, button.optional.copyable.icon-button {
+  background-color: var(--color-link) !important;
+  fill: var(--color-dark) !important;
+  color: var(--color-dark) !important;
+  stroke: var(--color-dark) !important;
+}
+.layout-single-column .navigation-bar button.icon-button.active .icon-close {
+  background-image: var(--icon-close-action-bar) !important;
+}
+.layout-single-column .account__header__tabs__buttons .button,
+.layout-single-column .column-inline-form button {
+  background-color: var(--color-link) !important;
+}
+.layout-single-column .detailed-status__meta svg, 
+.layout-single-column .status .status__visibility-icon svg {
+  color: var(--color-red) !important;
 }
