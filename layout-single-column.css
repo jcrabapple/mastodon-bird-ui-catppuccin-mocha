@@ -1393,7 +1393,7 @@ body.embed .detailed-status__display-avatar > img,
 
 .layout-single-column .hashtag-bar a:focus,
 .layout-single-column .hashtag-bar a:hover {
-  background-color: var(--color-accent-dark);
+  background-color: var(--color-dim);
   /* It should be always light also on light mode, so not using variable here */
   color: #f7f9f9;
 }
