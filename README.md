@@ -14,8 +14,6 @@ Mastodon Bird UI can be integrated as a **Site theme** for all instance users as
 
 **Please note**: These include modifications to the Mastodon core so do it only at your own risk! I highly recommend you to make the modifications in local development envinronment, push them to your fork, then git pull that fork to live after confirmed working.
 
-![image](https://github.com/ronilaukkarinen/mastodon-bird-ui/assets/1534150/b30f19e2-2835-4d92-b40d-cac9922f64b3)
-
 If you'd like a different branding for your instance like "Elephant" without any [mention of birds](https://github.com/ronilaukkarinen/mastodon-bird-ui/issues/30), use [Bird UI Theme Admins](https://github.com/mstdn/Bird-UI-Theme-Admins) by [@stux](https://mstdn.social/@stux). If you want Mastodon Bird UI to be as default, read along.
 
 Cd to your Mastodon directory (usually $HOME/live) you can run these bash commands (**Please note:** These add Mastodon Bird UI as name "Mastodon Bird UI (Dark)" + variants as default, while retaining the original themes as secondary themes) and run below.
