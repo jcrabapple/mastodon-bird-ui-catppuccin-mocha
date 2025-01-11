@@ -4873,3 +4873,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-multiple-columns .status .status__visibility-icon svg {
     color: var(--color-red) !important;
 }
+.layout-multiple-columns .account .account__relationship > .button {
+  background-color: var(--color-link) !important;
+}
