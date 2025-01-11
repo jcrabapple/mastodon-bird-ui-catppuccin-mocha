@@ -2,6 +2,8 @@
 
 This is a Catppuccin Mocha variant of Roni Laukkarinen's [Mastodon BirdUI](https://github.com/ronilaukkarinen/mastodon-bird-ui).
 
+![Screenshot](https://github.com/jcrabapple/mastodon-bird-ui-catppuccin-mocha/blob/92478ca320c664e4678d7f26ae36050bbe7a1176/Screenshot%202025-01-11%20at%2016-38-26%20Home%20-%20DMV.Community.png)
+
 ## Installation for Mastodon instance admins
 
 This is assuming you don't already have BirdUI installed. If you do, you will need to make some modifications to your config/themes.yml.
