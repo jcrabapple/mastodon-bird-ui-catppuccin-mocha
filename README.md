@@ -37,12 +37,25 @@ wget -N --no-check-certificate --no-cache --no-cookies --no-http-keep-alive http
 
 # Create dark theme file
 echo -e "@import 'application';\n@import 'mastodon-bird-ui-catppuccin-mocha/layout-single-column.scss';\n@import 'mastodon-bird-ui-catppuccin-mocha/layout-multiple-columns.scss';" > app/javascript/styles/mastodon-bird-ui-catppuccin-mocha.scss
-
-# Overwrite config/themes.yml with new settings, Mastodon Bird UI dark as default
-echo -e "default: styles/mastodon-bird-ui-catppuccin-mocha.scss\nmastodon-dark: styles/application.scss\nmastodon-light: styles/mastodon-light.scss\ncontrast: styles/contrast.scss" > config/themes.yml
 ```
 
-After this you need to edit localisations in `config/locales/en.yml` (`nano config/locales/en.yml`) and add this line:
+Edit your /config/themes.yml file to look similar to this (you may or may not have these other themes installed, the important part is to add mastodon-bird-ui-catppuccin-mocha at the bottom):
+```
+default: styles/mastodon-bird-ui-dark.scss
+mastodon-bird-ui-light: styles/mastodon-bird-ui-light.scss
+mastodon-bird-ui-contrast: styles/mastodon-bird-ui-contrast.scss
+mastodon-dark: styles/application.scss
+mastodon-light: styles/mastodon-light.scss
+contrast: styles/contrast.scss
+tangerineui: styles/tangerineui.scss
+tangerineui-purple: styles/tangerineui-purple.scss
+tangerineui-cherry: styles/tangerineui-cherry.scss
+tangerineui-lagoon: styles/tangerineui-lagoon.scss
+mastodon-bird-ui-catppuccin-mocha: styles/mastodon-bird-ui-catppuccin-mocha.scss
+```
+
+
+OPTIONAL: After this you can edit localisations in `config/locales/en.yml` (`nano config/locales/en.yml`) and add this line:
 
 ```yml
   mastodon-bird-ui-catppuccin-mocha: Mastodon Bird UI Catppuccin Mocha
@@ -58,12 +71,8 @@ Same for the localizations of your choice, for example `config/locales/fi.yml` (
 Make sure everything is set in place, then rebuild all the assets and restart all the services:
 
 ```bash
-bundle install
-rm -rfv public/packs
-yarn install
 RAILS_ENV=production bundle exec rails assets:precompile
 sudo systemctl restart mastodon-web mastodon-sidekiq mastodon-streaming
-sudo systemctl restart postgresql
 ```
 
 And you're done!
