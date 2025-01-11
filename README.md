@@ -27,7 +27,7 @@ Cd to your Mastodon directory (usually $HOME/live) you can run these bash comman
 export MASTODON_VERSION_FOR_BIRD_UI="main"
 
 # Create a new folder for the theme
-mkdir -p app/javascript/styles/mastodon-bird-ui
+mkdir -p app/javascript/styles/mastodon-bird-ui-catppuccin-mocha
 
 # Download the CSS file for single column layout
 wget -N --no-check-certificate --no-cache --no-cookies --no-http-keep-alive https://raw.githubusercontent.com/jcrabapple/mastodon-bird-ui-catppuccin-mocha/$MASTODON_VERSION_FOR_BIRD_UI/layout-single-column.css -O app/javascript/styles/mastodon-bird-ui-catppuccin-mocha/layout-single-column.scss
