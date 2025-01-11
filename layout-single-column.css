@@ -5257,3 +5257,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-single-column .status .status__visibility-icon svg {
   color: var(--color-red) !important;
 }
+.layout-single-column .account .account__relationship > .button {
+  background-color: var(--color-link) !important;
+}
