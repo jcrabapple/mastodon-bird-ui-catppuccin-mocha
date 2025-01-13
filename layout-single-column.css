@@ -5260,6 +5260,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-single-column .account .account__relationship > .button {
   background-color: var(--color-link) !important;
 }
-.layout-single-column .detailed-status__action-bar .detailed-status__button button.star-icon.icon-button.active::after {
+.layout-single-column .detailed-status__action-bar .detailed-status__button button.star-icon.icon-button.active::after, 
+.layout-single-column .detailed-status__button .icon-button.star-icon::after{
     left: -10px;
 }
