@@ -5264,3 +5264,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-single-column .detailed-status__button .icon-button.star-icon::after{
     left: -10px;
 }
+.layout-single-column .button.button-secondary {
+  background-color: var(--color-link);
+}
